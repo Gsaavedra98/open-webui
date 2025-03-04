@@ -1081,7 +1081,7 @@
 
 								<div class=" flex justify-between mt-1.5 mb-2.5 mx-0.5 max-w-full">
 									<div class="ml-1 self-end gap-0.5 flex items-center flex-1 max-w-[80%]">
-										<InputMenu
+										<!-- <InputMenu
 											bind:selectedToolIds
 											{screenCaptureHandler}
 											{inputFilesHandler}
@@ -1131,7 +1131,7 @@
 													/>
 												</svg>
 											</button>
-										</InputMenu>
+										</InputMenu> -->
 
 										<div class="flex gap-0.5 items-center overflow-x-auto scrollbar-none flex-1">
 											{#if $_user}
@@ -1174,7 +1174,7 @@
 												{/if}
 
 												{#if $config?.features?.enable_code_interpreter && ($_user.role === 'admin' || $_user?.permissions?.features?.code_interpreter)}
-													<Tooltip content={$i18n.t('Execute code for analysis')} placement="top">
+													<!-- <Tooltip content={$i18n.t('Execute code for analysis')} placement="top">
 														<button
 															on:click|preventDefault={() =>
 																(codeInterpreterEnabled = !codeInterpreterEnabled)}
@@ -1189,13 +1189,13 @@
 																>{$i18n.t('Code Interpreter')}</span
 															>
 														</button>
-													</Tooltip>
+													</Tooltip> -->
 												{/if}
 											{/if}
 										</div>
 									</div>
 
-									<div class="self-end flex space-x-1 mr-1 shrink-0">
+									<!-- <div class="self-end flex space-x-1 mr-1 shrink-0">
 										{#if !history?.currentId || history.messages[history.currentId]?.done == true}
 											<Tooltip content={$i18n.t('Record voice')}>
 												<button
@@ -1364,7 +1364,7 @@
 												</Tooltip>
 											</div>
 										{/if}
-									</div>
+									</div> -->
 								</div>
 							</div>
 						</form>
